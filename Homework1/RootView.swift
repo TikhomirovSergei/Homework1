@@ -16,14 +16,14 @@ struct RootView: View {
         
         TabView(selection: $selection) {
             
-            PersonView()
+            StartView()
                 .tabItem {
                     VStack {
-                        Text("Person")
-                        Image(systemName: "person")
+                        Text("Start")
+                        Image(systemName: "rosette")
                     }
-                }
-                .tag(0)
+            }
+            .tag(0)
             
             ProgrammingLanguagesListView()
                 .tabItem {
@@ -31,8 +31,17 @@ struct RootView: View {
                         Text("Languages")
                         Image(systemName: "desktopcomputer")
                     }
-                }
-                .tag(1)
+            }
+            .tag(1)
+            
+            AboutAuthorView()
+                .tabItem {
+                    VStack {
+                        Text("Author")
+                        Image(systemName: "person")
+                    }
+            }
+            .tag(2)
         }
     }
 }

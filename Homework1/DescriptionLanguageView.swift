@@ -19,3 +19,9 @@ struct DescriptionLanguageView: View {
             .padding(.horizontal, 40)
     }
 }
+
+struct DescriptionLanguageView_Previews: PreviewProvider {
+    static var previews: some View {
+        DescriptionLanguageView(desription: "")
+    }
+}

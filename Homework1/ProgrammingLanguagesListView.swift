@@ -34,3 +34,9 @@ struct ProgrammingLanguagesListView: View {
         
     }
 }
+
+struct ProgrammingLanguagesListView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProgrammingLanguagesListView()
+    }
+}

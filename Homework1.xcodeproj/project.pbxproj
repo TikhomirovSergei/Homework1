@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,11 +13,14 @@
 		A591EEDF239271D3005B1C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A591EEDE239271D3005B1C9D /* Assets.xcassets */; };
 		A591EEE2239271D3005B1C9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A591EEE1239271D3005B1C9D /* Preview Assets.xcassets */; };
 		A591EEE5239271D3005B1C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A591EEE3239271D3005B1C9D /* LaunchScreen.storyboard */; };
-		A591EEED239271D3005B1C9D /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEEC239271D3005B1C9D /* PersonView.swift */; };
+		A591EEED239271D3005B1C9D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEEC239271D3005B1C9D /* StartView.swift */; };
 		A591EEEF239271D3005B1C9D /* ProgrammingLanguagesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEEE239271D3005B1C9D /* ProgrammingLanguagesListView.swift */; };
 		A591EEF2239271D3005B1C9D /* ProgrammingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEF1239271D3005B1C9D /* ProgrammingLanguage.swift */; };
 		A591EEF4239271D3005B1C9D /* ProgrammingLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEF3239271D3005B1C9D /* ProgrammingLanguageModel.swift */; };
 		A591EEF6239281AC005B1C9D /* DescriptionLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEF5239281AC005B1C9D /* DescriptionLanguageView.swift */; };
+		A591EEF8239286CE005B1C9D /* AboutAuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEF7239286CE005B1C9D /* AboutAuthorView.swift */; };
+		A591EEFB23928875005B1C9D /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = A591EEFA23928875005B1C9D /* BetterSheet */; };
+		A591EEFD2392896E005B1C9D /* AuthorModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591EEFC2392896E005B1C9D /* AuthorModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +32,13 @@
 		A591EEE1239271D3005B1C9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A591EEE4239271D3005B1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A591EEE6239271D3005B1C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A591EEEC239271D3005B1C9D /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		A591EEEC239271D3005B1C9D /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		A591EEEE239271D3005B1C9D /* ProgrammingLanguagesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguagesListView.swift; sourceTree = "<group>"; };
 		A591EEF1239271D3005B1C9D /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
 		A591EEF3239271D3005B1C9D /* ProgrammingLanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguageModel.swift; sourceTree = "<group>"; };
 		A591EEF5239281AC005B1C9D /* DescriptionLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionLanguageView.swift; sourceTree = "<group>"; };
+		A591EEF7239286CE005B1C9D /* AboutAuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorView.swift; sourceTree = "<group>"; };
+		A591EEFC2392896E005B1C9D /* AuthorModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A591EEFB23928875005B1C9D /* BetterSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +76,11 @@
 				A591EED8239271C6005B1C9D /* AppDelegate.swift */,
 				A591EEDA239271C6005B1C9D /* SceneDelegate.swift */,
 				A591EEDC239271C6005B1C9D /* RootView.swift */,
-				A591EEEC239271D3005B1C9D /* PersonView.swift */,
+				A591EEEC239271D3005B1C9D /* StartView.swift */,
 				A591EEEE239271D3005B1C9D /* ProgrammingLanguagesListView.swift */,
 				A591EEF5239281AC005B1C9D /* DescriptionLanguageView.swift */,
+				A591EEF7239286CE005B1C9D /* AboutAuthorView.swift */,
+				A591EEFC2392896E005B1C9D /* AuthorModalView.swift */,
 				A591EEDE239271D3005B1C9D /* Assets.xcassets */,
 				A591EEE3239271D3005B1C9D /* LaunchScreen.storyboard */,
 				A591EEE6239271D3005B1C9D /* Info.plist */,
@@ -114,6 +122,9 @@
 			dependencies = (
 			);
 			name = Homework1;
+			packageProductDependencies = (
+				A591EEFA23928875005B1C9D /* BetterSheet */,
+			);
 			productName = Homework1;
 			productReference = A591EED5239271C6005B1C9D /* Homework1.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +153,9 @@
 				Base,
 			);
 			mainGroup = A591EECC239271C6005B1C9D;
+			packageReferences = (
+				A591EEF923928875005B1C9D /* XCRemoteSwiftPackageReference "BetterSheet" */,
+			);
 			productRefGroup = A591EED6239271C6005B1C9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,14 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A591EEF8239286CE005B1C9D /* AboutAuthorView.swift in Sources */,
 				A591EED9239271C6005B1C9D /* AppDelegate.swift in Sources */,
 				A591EEF2239271D3005B1C9D /* ProgrammingLanguage.swift in Sources */,
 				A591EEDB239271C6005B1C9D /* SceneDelegate.swift in Sources */,
 				A591EEF6239281AC005B1C9D /* DescriptionLanguageView.swift in Sources */,
+				A591EEFD2392896E005B1C9D /* AuthorModalView.swift in Sources */,
 				A591EEEF239271D3005B1C9D /* ProgrammingLanguagesListView.swift in Sources */,
 				A591EEDD239271C6005B1C9D /* RootView.swift in Sources */,
 				A591EEF4239271D3005B1C9D /* ProgrammingLanguageModel.swift in Sources */,
-				A591EEED239271D3005B1C9D /* PersonView.swift in Sources */,
+				A591EEED239271D3005B1C9D /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A591EEF923928875005B1C9D /* XCRemoteSwiftPackageReference "BetterSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egeniq/BetterSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A591EEFA23928875005B1C9D /* BetterSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A591EEF923928875005B1C9D /* XCRemoteSwiftPackageReference "BetterSheet" */;
+			productName = BetterSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A591EECD239271C6005B1C9D /* Project object */;
 }

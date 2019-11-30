@@ -8,8 +8,14 @@
 
 import SwiftUI
 
-struct PersonView: View {
+struct StartView: View {
     var body: some View {
         Text("Hello, SwiftUI")
+    }
+}
+
+struct StartView_Previews: PreviewProvider {
+    static var previews: some View {
+        StartView()
     }
 }
