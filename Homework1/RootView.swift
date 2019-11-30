@@ -22,14 +22,17 @@ struct RootView: View {
                         Text("Person")
                         Image(systemName: "person")
                     }
+                }
                 .tag(0)
-            }
+            
+            ProgrammingLanguagesListView()
+                .tabItem {
+                    VStack {
+                        Text("Languages")
+                        Image(systemName: "desktopcomputer")
+                    }
+                }
+                .tag(1)
         }
-    }
-}
-
-struct RootView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootView()
     }
 }
