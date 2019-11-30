@@ -11,12 +11,13 @@ import SwiftUI
 struct RootView: View {
     
     @State private var selection = 0
+    @State private var showFirst = false
     
     var body: some View {
         
         TabView(selection: $selection) {
             
-            StartView(selection: $selection)
+            StartView(selection: $selection, showFirst: $showFirst)
                 .tabItem {
                     VStack {
                         Text("Start")
@@ -25,7 +26,7 @@ struct RootView: View {
             }
             .tag(0)
             
-            ProgrammingLanguagesListView()
+            ProgrammingLanguagesListView(showFirst: $showFirst)
                 .tabItem {
                     VStack {
                         Text("Languages")

@@ -12,31 +12,28 @@ struct ProgrammingLanguagesListView: View {
     
     @ObservedObject var model = ProgrammingLanguagesModel()
     
-    init() {
-        UITableView.appearance().separatorStyle = .none
-    }
+    @Binding var showFirst: Bool
     
     var body: some View {
         
         NavigationView {
             VStack {
                 List {
-                    ForEach(model.languages) { language in
-                        NavigationLink(destination: DescriptionLanguageView(desription: language.desription)) {
-                            Text(language.name)
+                    if $showFirst.wrappedValue {
+                        NavigationLink(destination: DescriptionLanguageView(desription: model.languages.first!.desription), isActive: $showFirst) {
+                            Text(model.languages.first!.name)
                         }
-                    } // ForEach
+                    } else {
+                        ForEach(model.languages) { language in
+                            NavigationLink(destination: DescriptionLanguageView(desription: language.desription)) {
+                                Text(language.name)
+                            }
+                        } // ForEach
+                    }
                 } // List
             } // VStack
             .navigationBarHidden(false)
             .navigationBarTitle("Programming languages")
         }
-        
-    }
-}
-
-struct ProgrammingLanguagesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgrammingLanguagesListView()
     }
 }
