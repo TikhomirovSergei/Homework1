@@ -16,7 +16,7 @@ struct RootView: View {
         
         TabView(selection: $selection) {
             
-            StartView()
+            StartView(selection: $selection)
                 .tabItem {
                     VStack {
                         Text("Start")

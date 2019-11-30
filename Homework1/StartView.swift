@@ -9,13 +9,17 @@
 import SwiftUI
 
 struct StartView: View {
+    
+    @Binding var selection: Int
+    
     var body: some View {
-        Text("Hello, SwiftUI")
-    }
-}
-
-struct StartView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
+        
+        VStack {
+            Text("Hello, SwiftUI").padding(.vertical, 40)
+            
+            Button("show next view") {
+                self.selection = 1
+            }
+        }
     }
 }
