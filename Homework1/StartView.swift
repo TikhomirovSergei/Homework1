@@ -11,7 +11,7 @@ import SwiftUI
 struct StartView: View {
     
     @Binding var selection: Int
-    @Binding var showFirst: Bool
+    @Binding var selectedIndex: Int?
     
     var body: some View {
         
@@ -20,7 +20,7 @@ struct StartView: View {
             
             Button("show next view") {
                 self.selection = 1
-                self.showFirst = true
+                self.selectedIndex = 1
             }
         }
     }

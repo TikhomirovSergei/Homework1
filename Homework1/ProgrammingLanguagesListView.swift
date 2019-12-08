@@ -12,25 +12,17 @@ struct ProgrammingLanguagesListView: View {
     
     @ObservedObject var model = ProgrammingLanguagesModel()
     
-    @Binding var showFirst: Bool
+    @Binding var selectedIndex: Int?
     
     var body: some View {
         
         NavigationView {
             VStack {
-                List {
-                    if $showFirst.wrappedValue {
-                        NavigationLink(destination: DescriptionLanguageView(desription: model.languages.first!.desription), isActive: $showFirst) {
-                            Text(model.languages.first!.name)
-                        }
-                    } else {
-                        ForEach(model.languages) { language in
-                            NavigationLink(destination: DescriptionLanguageView(desription: language.desription)) {
-                                Text(language.name)
-                            }
-                        } // ForEach
+                List (model.languages.indices) { index in
+                    NavigationLink(destination: DescriptionLanguageView(desription: self.model.languages[index].desription), tag: index, selection: self.$selectedIndex) {
+                        Text(self.model.languages[index].name)
                     }
-                } // List
+                }
             } // VStack
             .navigationBarHidden(false)
             .navigationBarTitle("Programming languages")
